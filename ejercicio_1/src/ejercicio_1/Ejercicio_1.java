@@ -14,13 +14,18 @@ package ejercicio_1;
 import entidad.Animal;
 import entidad.Gato;
 import entidad.Perro;
+import java.util.ArrayList;
 
 public class Ejercicio_1 {
     public static void main(String[] args) {
+        ArrayList<Animal> animales = new ArrayList<>();
         Animal gato = new Gato();
         Animal perro = new Perro();
-        gato.hacerRuido();
-        perro.hacerRuido();
+        animales.add(gato);
+        animales.add(perro);
+        for (Animal animal : animales) {
+            animal.hacerRuido();
+        }
     }
     
 }
