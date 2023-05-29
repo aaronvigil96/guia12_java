@@ -10,14 +10,26 @@
     Área rectángulo: base * altura / Perímetro rectángulo: (base + altura) * 2.
 */
 
-package ejercicio_5;
+package entidad;
 
-import entidad.Circulo;
-import entidad.Rectangulo;
+import interfaz.calculosFormas;
 
-public class Ejercicio_5 {
-    public static void main(String[] args) {
-        Circulo circulo = new Circulo();
-        Rectangulo rectangulo = new Rectangulo();
+public class Circulo implements calculosFormas{
+    private int radio;
+    private int diametro;
+
+    public Circulo() {
+    }
+
+    public Circulo(int radio, int diametro) {
+        this.radio = radio;
+        this.diametro = diametro;
+    }
+    
+    @Override
+    public void area() {
+        System.out.println("Circulo...");
+        System.out.println("El area es: " + (PI * (this.radio * this.radio)));
+        System.out.println("El perimetro es: " + (PI * this.diametro));
     }
 }

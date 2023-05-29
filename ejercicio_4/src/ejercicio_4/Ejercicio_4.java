@@ -10,7 +10,7 @@ public class Ejercicio_4 {
         int totalLavadora = 0, totalTelevisor = 0;
         int cantidadLavadora = 0, cantidadTelevisor = 0;
         ArrayList<Electrodomestico> electrodomesticos = new ArrayList<>();
-        
+
         electrodomesticos.add(new Lavadora(10, "blanco", 'c', 500));
         electrodomesticos.add(new Televisor(41, true, "negro", 'a', 10));
         electrodomesticos.add(new Televisor(20, false, "azul", 'b', 20));
