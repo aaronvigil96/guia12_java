@@ -30,6 +30,10 @@ public class Circulo implements calculosFormas{
     public void area() {
         System.out.println("Circulo...");
         System.out.println("El area es: " + (PI * (this.radio * this.radio)));
+    }
+
+    @Override
+    public void perimetro() {
         System.out.println("El perimetro es: " + (PI * this.diametro));
     }
 }

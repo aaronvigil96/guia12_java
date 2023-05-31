@@ -29,6 +29,11 @@ public class Rectangulo implements calculosFormas{
     public void area() {
         System.out.println("Rectangulo...");
         System.out.println("El area es: " + (this.base * this.altura));
+        
+    }
+
+    @Override
+    public void perimetro() {
         System.out.println("El perimetro es: " + ((this.base + altura) * 2));
     }
 }
